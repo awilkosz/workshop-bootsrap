@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+        <title>SGP - Accueil</title>
+
+        <style>
+            .active {
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navigation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Collaborateurs <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Statistiques</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Activités</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        <!-- Filtre -->
+        <div class="m-2">
+            <button type="button" class="btn btn-primary float-right">Ajouter un nouveau collaborateur</button>
+
+            <div>
+                <form>
+                    <h1 class="ml-5">Nouveau Collaborateur</h1>
+
+                    <div class="form-group row">
+                        <label for="nom" class="col-form-label col-sm-3 text-right">Nom : </label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" name="nom" id="nom">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="prenom" class="col-form-label col-sm-3 text-right">Prénom : </label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" name="prenom" id="prenom">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="dateNaissance" class="col-form-label col-sm-3 text-right">Date de naissance : </label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" name="dateNaissance" id="dateNaissance">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="adresse" class="col-form-label col-sm-3 text-right">Adresse : </label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" name="adresse" id="adresse">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="numeroSecu" class="col-form-label col-sm-3 text-right">Numéro de sécurité sociale : </label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" name="numeroSecu" id="numeroSecu">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-5 ">
+                            <button type="button" class="btn btn-success float-right">Créer</button>
+                        </div>
+                    </form>
+                    
+                </form>
+
+            </div>
+            
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+        <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
