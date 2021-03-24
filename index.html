@@ -12,6 +12,12 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         crossorigin="anonymous">
         <title>SGP - Accueil</title>
+
+        <style>
+            .active {
+                background-color: lightblue;
+            }
+        </style>
     </head>
 
     <body>
@@ -36,6 +42,44 @@
             </div>
           </nav>
 
+        <div class="m-2">
+            <button type="button" class="btn btn-primary float-right">Ajouter un nouveau collaborateur</button>
+
+            <div>
+                <form>
+                    <h1>Les Collaborateurs</h1>
+
+                    <div class="form-group row">
+                        <label for="recherche" class="col-form-label col-sm-3">Rechercher un nom ou un prénom qui commence par : </label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" name="recherche" id="recherche">
+                        </div>
+                        
+                        <button type="button" class="btn btn-success ml-2 col-sm-1">Rechercher</button> 
+
+                        <div class="col-sm-4 float-right">
+                            <input type="checkbox" name="voirCollabDesac" value="voirCollabDesac"><label for="voirCollabDesac">Voir les collaborateurs désactivés</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="filtreDepartements" class="col-form-label">Filtrer par départements: </label>
+                        <div class="col-sm-3">
+                            <select name="filtre" id="filtreDepartements" class="form-control">
+                                <option value="tous">Tous</option>
+                                <option value="comptabilite">Comptabilité</option>
+                                <option value="ressourcesHumaines">Ressources humaines</option>
+                                <option value="informatique">Informatique</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+                
+            </div>
+
+            
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
