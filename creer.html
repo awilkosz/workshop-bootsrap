@@ -42,12 +42,12 @@
             </div>
           </nav>
 
-        <!-- Filtre -->
+        <!-- Formulaire -->
         <div class="m-2">
             <button type="button" class="btn btn-primary float-right">Ajouter un nouveau collaborateur</button>
 
             <div>
-                <form>
+                <form id="formulaireCreationCollaborateur">
                     <h1 class="ml-5">Nouveau Collaborateur</h1>
 
                     <div class="form-group row">
@@ -67,7 +67,7 @@
                     <div class="form-group row">
                         <label for="dateNaissance" class="col-form-label col-sm-3 text-right">Date de naissance : </label>
                         <div class="col-sm-2">
-                            <input type="text" class="form-control" name="dateNaissance" id="dateNaissance">
+                            <input type="date" class="form-control" name="dateNaissance" id="dateNaissance">
                         </div>
                     </div>
 
@@ -87,15 +87,85 @@
 
                     <div class="form-group row">
                         <div class="col-sm-5 ">
-                            <button type="button" class="btn btn-success float-right">Créer</button>
+                            <button type="button" class="btn btn-success float-right" id="boutonCreer">Créer</button>
                         </div>
-                    </form>
+                    </div>
                     
                 </form>
 
             </div>
             
         </div>
+
+        <!-- Une boite de dialogue -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Création d'un collaborateur</h4>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                Vous êtes sur le point de créer un nouveau collaborateur :
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col">
+                                Nom :
+                            </div>
+                            <p class="col" id="ligneNom"></p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                Prénom :
+                            </div>
+                            <p class="col" id="lignePrenom"></p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                Date de naissance :
+                            </div>
+                            <p class="col" id="ligneDateNaissance"></p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                Adresse :
+                            </div>
+                            <p class="col" id="ligneAdresse"></p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                Numéro de sécurité sociale :
+                            </div>
+                            <p class="col" id="ligneSecu"></p>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                            Annuler
+                        </button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal" id="creerCollaborateur">
+                            Confirmer
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Fin boite de dialogue -->
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -108,5 +178,6 @@
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
